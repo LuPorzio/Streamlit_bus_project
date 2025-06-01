@@ -126,6 +126,11 @@ st.set_page_config(layout="wide")
 st.title("🚌 Live Bus Congestion Map with Color Coding")
 st.markdown("🔴 High Congestion | 🟠 Medium Congestion | 🟢 Low Congestion")
 
+# --------------------------
+# User input
+# --------------------------
+route = st.selectbox("Select route:", options=["Route 1", "Route 5", "Route 3", "Route 8", "Rounte 13"])
+#destination = st.selectbox("Select destination stop:", ["Università Centrale"])
 
 # ✅ Use a valid transparent PNG bus icon
 BUS_ICON_URL = "https://img.icons8.com/emoji/48/bus-emoji.png"
